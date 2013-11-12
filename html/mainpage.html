@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="author" content="LinhNguyen" />
+	<meta name="google" value="notranslate" />
+    <link rel="stylesheet" type="text/css" href="../css/style_mobile.css"/>
+	<title>Main Page</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/joomfashion.js"></script>
+    <script>
+    function quickfeed()
+      {
+        jQuery.ajax({
+    	    // File to display result
+    	    url:"quickfeed.html",
+    		async:false,
+    		success:function(result){
+    		    // Add general div here
+                 jQuery(".jf_content_mobile").html(result);
+        }});
+      }
+      function jf_alert()
+      {
+        jQuery.ajax({
+    	    // File to display result
+    	    url:"alert.html",
+    		async:false,
+    		success:function(result){
+    		    // Add general div here
+                 jQuery(".jf_content_mobile").html(result);
+        }});
+      }
+    </script>
+</head>
+<body>
+   <div class="jf_content_mobile">
+    <div class="jf_header">
+        <div class="jf_topheader">
+            <div class="jf_left">
+                <a href="#" onclick="quickfeed();"><img src="../images/bt_prev.png"/></a>
+                <p>quickfeed</p>
+            </div>
+            <div class="jf_right">
+                <a href="#" onclick="quickfeed();"><img src="../images/bt_next.png"/></a>
+                <p>alerts</p>
+            </div>
+        </div>
+        <div class="jf_bottomheader">
+            <h3>Select the team you want late<br /><span>changes and substitution</span></h3>
+        </div>
+    </div>
+    
+    <div class="jf_content">
+    <div class="jf_shadow">
+        <div class="jf_list_setting">
+            <div class="jf_row">
+                <label>hawthorn</label>
+                <span class="jf_button" id="on_hawthorn">
+                    <a href="javascript:void();" class="off hawthorn" id="off_hawthorn">off</a>
+                    <a href="javascript:void();" class="on hawthorn">on</a>
+                    <span class="jf_slide"><img src="../images/hawthorn.png" alt="flag1"/></span>
+                </span>
+            </div>
+            <div class="jf_row">
+                <label>geelong</label>
+                <span class="jf_button" id="on_geelong">
+                    <a href="javascript:void();" class="off geelong" id="off_geelong">off</a>
+                    <a href="javascript:void();" class="on geelong">on</a>
+                    <span class="jf_slide"><img src="../images/geelong.png" alt="flag1"/></span>
+                </span>
+            </div>
+            <div class="jf_row">
+                <label>sydney</label>
+                <span class="jf_button" id="on_sydney">
+                    <a href="javascript:void();" class="off sydney" id="off_sydney">off</a>
+                    <a href="javascript:void();" class="on sydney">on</a>
+                    <span class="jf_slide"><img src="../images/sydney.png" alt="flag1"/></span>
+                </span>
+            </div>
+            <div class="jf_row">
+                <label>fremantle</label>
+                <span class="jf_button" id="on_fremantle">
+                    <a href="javascript:void();" class="off fremantle" id="off_fremantle">off</a>
+                    <a href="javascript:void();" class="on fremantle">on</a>
+                    <span class="jf_slide"><img src="../images/premantle.png" alt="flag1"/></span>
+                </span>
+            </div>
+            <div class="jf_row">
+                <label>richmond</label>
+                <span class="jf_button" id="on_richmond">
+                    <a href="javascript:void();" class="off richmond" id="off_richmond">off</a>
+                    <a href="javascript:void();" class="on richmond">on</a>
+                    <span class="jf_slide"><img src="../images/richmond.png" alt="flag1"/></span>
+                </span>
+            </div>
+            <div class="jf_row">
+                <label>collingwood</label>
+                <span class="jf_button" id="on_collingwood">
+                    <a href="javascript:void();" class="off collingwood" id="off_collingwood">off</a>
+                    <a href="javascript:void();" class="on collingwood">on</a>
+                    <span class="jf_slide"><img src="../images/collingwood.png" alt="flag1"/></span>
+                </span>
+            </div>
+            <div class="jf_row">
+                <label>essendon</label>
+                <span class="jf_button" id="on_essendon">
+                    <a href="javascript:void();" class="off essendon" id="off_essendon">off</a>
+                    <a href="javascript:void();" class="on essendon">on</a>
+                    <span class="jf_slide"><img src="../images/essendon.png" alt="flag1"/></span>
+                </span>
+            </div>
+            <div class="jf_row">
+                <label>port adelaide</label>
+                <span class="jf_button" id="on_port_adelaide">
+                    <a href="javascript:void();" class="off port_adelaide" id="off_port_adelaide">off</a>
+                    <a href="javascript:void();" class="on port_adelaide">on</a>
+                    <span class="jf_slide"><img src="../images/portadellainde.png" alt="flag1"/></span>
+                </span>
+            </div>
+            <div class="jf_row">
+                <label>carlton</label>
+                <span class="jf_button" id="on_carlton">
+                    <a href="javascript:void();" class="off carlton" id="off_carlton">off</a>
+                    <a href="javascript:void();" class="on carlton">on</a>
+                    <span class="jf_slide"><img src="../images/carlton.png" alt="flag1"/></span>
+                </span>
+            </div>
+            <div class="jf_row">
+                <label>BRISBANE</label>
+                <span class="jf_button" id="on_BRISBANE">
+                    <a href="javascript:void();" class="off BRISBANE" id="off_BRISBANE">off</a>
+                    <a href="javascript:void();" class="on BRISBANE">on</a>
+                    <span class="jf_slide"><img src="../images/brisbanne.png" alt="flag1"/></span>
+                </span>
+            </div>
+            <div class="jf_row">
+                <label>North Melb</label>
+                <span class="jf_button" id="on_north_melb">
+                    <a href="javascript:void();" class="off north_melb" id="off_north_melb">off</a>
+                    <a href="javascript:void();" class="on north_melb">on</a>
+                    <span class="jf_slide"><img src="../images/northmelb.png" alt="flag1"/></span>
+                </span>
+            </div>
+            <div class="jf_row">
+                <label>Adelaide</label>
+                <span class="jf_button" id="on_adelaide">
+                    <a href="javascript:void();" class="off adelaide" id="off_adelaide">off</a>
+                    <a href="javascript:void();" class="on adelaide">on</a>
+                    <span class="jf_slide"><img src="../images/adelaide.png" alt="flag1"/></span>
+                </span>
+            </div>
+            <div class="jf_row">
+                <label>west coast</label>
+                <span class="jf_button" id="on_west_coast">
+                    <a href="javascript:void();" class="off west_coast" id="off_west_coast">off</a>
+                    <a href="javascript:void();" class="on west_coast">on</a>
+                    <span class="jf_slide"><img src="../images/westcoast.png" alt="flag1"/></span>
+                </span>
+            </div>
+            <div class="jf_row">
+                <label>gold coast</label>
+                <span class="jf_button" id="on_gold_coast">
+                    <a href="javascript:void();" class="off gold_coast" id="off_gold_coast">off</a>
+                    <a href="javascript:void();" class="on gold_coast">on</a>
+                    <span class="jf_slide"><img src="../images/goldcoast.png" alt="flag1"/></span>
+                </span>
+            </div>
+            <div class="jf_row">
+                <label>western bulldogs</label>
+                <span class="jf_button" id="on_western_bulldogs">
+                    <a href="javascript:void();" class="off western_bulldogs" id="off_western_bulldogs">off</a>
+                    <a href="javascript:void();" class="on western_bulldogs">on</a>
+                    <span class="jf_slide"><img src="../images/western.png" alt="flag1"/></span>
+                </span>
+            </div>
+            <div class="jf_row">
+                <label>st kilda</label>
+                <span class="jf_button" id="on_st_kilda">
+                    <a href="javascript:void();" class="off st_kilda" id="off_st_kilda">off</a>
+                    <a href="javascript:void();" class="on st_kilda">on</a>
+                    <span class="jf_slide"><img src="../images/stkilda.png" alt="flag1"/></span>
+                </span>
+            </div>
+            <div class="jf_row">
+                <label>melbourne</label>
+                <span class="jf_button" id="on_melbourne">
+                    <a href="javascript:void();" class="off melbourne" id="off_melbourne">off</a>
+                    <a href="javascript:void();" class="on melbourne">on</a>
+                    <span class="jf_slide"><img src="../images/melbourne.png" alt="flag1"/></span>
+                </span>
+            </div>
+            <div class="jf_row">
+                <label>Gws</label>
+                <span class="jf_button" id="on_gws">
+                    <a href="javascript:void();" class="off gws" id="off_gws">off</a>
+                    <a href="javascript:void();" class="on gws">on</a>
+                    <span class="jf_slide"><img src="../images/gws.png" alt="flag1"/></span>
+                </span>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+</body>
+</html>

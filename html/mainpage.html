@@ -19,19 +19,20 @@
 	// Callback function references the event target and adds the 'swipeleft' class to it
 	function swipeleftHandler( event ){
 	//jQuery( event.target ).addClass( "swipeleft" );
-		window.location="alert.htm";
+		jQuery('a[attr=left][id=swipe]').trigger('click');
 	}
 	
 	// Callback function references the event target and adds the 'swipeleft' class to it
 	function swiperightHandler( event ){
 	//jQuery( event.target ).addClass( "swipeleft" );
-		window.location="quickfeed.html";
+		jQuery('a[attr=right][id=swipe]').trigger('click');
 	}
 	
 	
 	});
 	</script>
-
+	<a href="alert.htm" data-transition="pop" style="display:none;" attr="right" id="swipe"></a>
+	<a href="quickfeed.html" data-transition="pop" style="display:none;" attr="left" id="swipe"></a>
     <script>
     function quickfeed()
       {

@@ -8,6 +8,30 @@
 	<title>Main Page</title>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="../js/joomfashion.js"></script>
+	<script type="text/javascript" src="../js/jquery-mobile.js"></script>
+	
+	<script>
+	jQuery(function(){
+	// Bind the swipeleftHandler callback function to the swipe event on div.box
+	jQuery("body").on( "swipeleft", swipeleftHandler );
+	jQuery("body").on( "swiperight", swiperightHandler );
+	
+	// Callback function references the event target and adds the 'swipeleft' class to it
+	function swipeleftHandler( event ){
+	//jQuery( event.target ).addClass( "swipeleft" );
+	alert('swipe left');
+	}
+	
+	// Callback function references the event target and adds the 'swipeleft' class to it
+	function swiperightHandler( event ){
+	//jQuery( event.target ).addClass( "swipeleft" );
+	alert('swipe right');
+	}
+	
+	
+	});
+	</script>
+
     <script>
     function quickfeed()
       {
